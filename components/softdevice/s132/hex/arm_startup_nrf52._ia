@@ -1,0 +1,6 @@
+--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\..\..\config -I ..\config  --cpreproc_opts=-D__HEAP_SIZE=8192,-D__STACK_SIZE=8192
+-I.\RTE\_flash_s132_nrf52_7.2.0_softdevice
+-IC:\Keil_v5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+-IC:\Keil_v5\Packs\NordicSemiconductor\nRF_DeviceFamilyPack\8.44.1\Device\Include
+--pd "__UVISION_VERSION SETA 532" --pd "_RTE_ SETA 1" --pd "NRF52832_XXAA SETA 1" --pd "_RTE_ SETA 1" --pd "__HEAP_SIZE SETA 8192" --pd "__STACK_SIZE SETA 8192"
+--list .\_build\arm_startup_nrf52.lst --xref -o ..\..\..\..\..\..\components\softdevice\s132\hex\arm_startup_nrf52.o --depend ..\..\..\..\..\..\components\softdevice\s132\hex\arm_startup_nrf52.d "RTE\Device\nRF52832_xxAA\arm_startup_nrf52.s"

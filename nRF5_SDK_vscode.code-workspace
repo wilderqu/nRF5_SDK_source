@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"app_timer.h": "c",
+			"nrf_log.h": "c",
+			"ble_advertising.h": "c",
+			"ble_advdata.h": "c",
+			"service_if.h": "c",
+			"bsp_btn_ble.h": "c",
+			"app_error.h": "c",
+			"ble_srv_common.h": "c",
+			"stdbool.h": "c",
+			"app_util.h": "c",
+			"nrf.h": "c"
+		}
+	}
+}

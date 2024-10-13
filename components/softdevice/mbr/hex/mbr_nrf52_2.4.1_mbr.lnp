@@ -1,0 +1,24 @@
+--cpu=Cortex-M4 --fpu=SoftVFP
+"..\..\..\..\..\..\components\softdevice\mbr\hex\main.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\boards.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrfx_atomic.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\app_error.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\app_error_handler_keil.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\app_error_weak.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\app_util_platform.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_assert.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_atomic.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_balloc.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_fprintf.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_fprintf_format.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_memobj.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_ringbuf.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_strerror.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_log_frontend.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\nrf_log_str_formatter.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\arm_startup_nrf52811.o"
+"..\..\..\..\..\..\components\softdevice\mbr\hex\system_nrf52.o"
+--library_type=microlib --strict --scatter "..\..\..\..\..\..\components\softdevice\mbr\hex\mbr_nrf52_2.4.1_mbr.sct"
+--diag_suppress 6330 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\_build\mbr_nrf52_2.4.1_mbr.map" -o ..\..\..\..\..\..\components\softdevice\mbr\hex\mbr_nrf52_2.4.1_mbr.hex
